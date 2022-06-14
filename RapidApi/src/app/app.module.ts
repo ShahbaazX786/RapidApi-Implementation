@@ -1,3 +1,4 @@
+import { CnjokesService } from './services/cnjokes.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CnjokesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
