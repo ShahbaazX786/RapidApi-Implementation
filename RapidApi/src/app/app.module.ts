@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ChuckNorrisJokesComponent } from './components/chuck-norris-jokes/chuck-norris-jokes.component';
 import { HomeComponent } from './components/home/home.component';
 import { PnfComponent } from './components/pnf/pnf.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PnfComponent } from './components/pnf/pnf.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
