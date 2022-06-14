@@ -1,3 +1,4 @@
+import { PnfComponent } from './components/pnf/pnf.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChuckNorrisJokesComponent } from './components/chuck-norris-jokes/chuck-norris-jokes.component';
 import { NgModule } from '@angular/core';
@@ -7,7 +8,7 @@ const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
   {path:'chuck',component:ChuckNorrisJokesComponent},
-  {path:'**',component:pnf},
+  {path:'**',component:PnfComponent},
 ];
 
 @NgModule({
